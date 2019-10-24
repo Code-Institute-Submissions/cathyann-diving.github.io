@@ -2,8 +2,7 @@
 
 /*--------------------------------------------Index.html */
 
-
-.container {
+.bg-landing {
     position: fixed;
     background-image: url("../images/jellyfish.jpg");
     display: inline-block;
@@ -12,14 +11,12 @@
     background-size: cover;
     height: 100%;
     width: 100%;
-    min-height: 100%;
-    min-width: 100%;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
 
-.container .btn {
+.btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,3 +57,63 @@
     right: 0;
 }
 
+/*--------------------------------------------Fixed navbar */
+
+.navbar {
+    background-color: #4682B4;
+    top: 0;
+    width: 100%;
+    padding: 0px;
+}
+
+.navbar a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background: #00008B;
+    color: black;
+}
+
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
+
+#nav {
+    margin: 0;
+}
+
+.span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*--------------------------------------------Content */
+
+.container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.container .content {
+    position: relative;
+    background: rgb(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 50%;
+    padding: 80px;
+    font-family: "EXO", sans-serif;
+    font-weight: 300;
+}
