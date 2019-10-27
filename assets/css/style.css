@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/*--------------------------------------------Index.html */
+/*--------------------------------------------bg image */
 
 .bg-landing {
     position: fixed;
@@ -16,6 +16,50 @@
     -webkit-transition: all .5s ease-in-out;
 }
 
+.bg-home {
+    position: fixed;
+    background-image: url("../images/diver.jpg");
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.bg-islands {
+    position: fixed;
+    background-image: url("../images/beach.jpg");
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.bg-services {
+    position: fixed;
+    background-image: url("../images/nemo.jpg");
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+/*--------------------------------------------btn */
+
 .btn {
     position: absolute;
     top: 50%;
@@ -23,7 +67,7 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #6495ed;
-    color: #fff;
+    color: #00008B;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -57,7 +101,21 @@
     right: 0;
 }
 
-/*--------------------------------------------Fixed navbar */
+.button {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #008B8B;
+    background-color: #00008B;
+    padding: 5px 10px;
+    border: none;
+    font-family: "EXO", sans-serif;
+} 
+
+.button a {
+    text-decoration: none;
+}
+
+/*--------------------------------------------navbar */
 
 .navbar {
     background-color: #4682B4;
@@ -70,18 +128,13 @@
     display: block;
     color: #fff;
     text-align: center;
-    padding: 10px 16px;
+    padding: 10px 18px;
     text-decoration: none;
-    font-size: 14px;
-}
-
-.navbar a:hover {
-    background: #00008B;
-    color: black;
+    font-size: 12px;
 }
 
 #nav li {
-    font-size: 14px;
+    font-size: 12px;
     padding: 0;
 }
 
@@ -89,16 +142,34 @@
     margin: 0;
 }
 
-.span {
+.menuitem span {
     display: block;
     width: 100%;
     padding-top: 5px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
     font-weight: 300;
     letter-spacing: 2px;
 }
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.menucontainer {
+    font-size: 0;
+}
+
+/*--------------------------------------------Hover.css*/
+
+.hvr-sweep-to-bottom:before {
+    background: #008B8B;
+    height: 100%;
+    color: black;
+}
+
 
 /*--------------------------------------------Content */
 
@@ -106,14 +177,47 @@
     position: relative;
     max-width: 100%;
     margin: auto;
+    height: 50%;
+}
+
+.container img {
+    vertical-align: middle;
 }
 
 .container .content {
-    position: relative;
+    position: absolute;
     background: rgb(0, 0, 0, 0.5);
     color: #f1f1f1;
-    width: 50%;
-    padding: 80px;
     font-family: "EXO", sans-serif;
+    font-size: 12px;
     font-weight: 300;
+    padding: 30px;
+}
+
+
+/*--------------------------------------------Contact Form */
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #4682B4;
+}
+
+.form-control {
+    border: 1px solid black;
+    font-family: inherit;
 }
