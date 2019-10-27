@@ -194,6 +194,34 @@
     padding: 30px;
 }
 
+.containers {
+    position: relative;
+    margin: auto;
+    max-width: 80%;
+}
+
+.containers .contents {
+    background: rgb(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    font-family: "EXO", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 20px;
+    text-align: justify;
+}
+
+.dive-center {
+    position: relative;
+    max-width: 60%;
+    margin: 20px;
+    background: rgb(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    font-family: "EXO", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 20px;
+    text-align: left;
+}
 
 /*--------------------------------------------Contact Form */
 
@@ -220,4 +248,18 @@ button[type="submit"] {
 .form-control {
     border: 1px solid black;
     font-family: inherit;
+}
+
+/*--------------------------------------------islands heading */
+
+.islands-intro {
+    padding: 30px;
+}
+
+/*--------------------------------------------media */
+
+@media(max-width: 576px) {
+    .dive-center {
+        max-width: 100%;
+    }
 }
