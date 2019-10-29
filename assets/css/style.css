@@ -138,6 +138,10 @@
     padding: 0px;
 }
 
+.col {
+    padding: 0;
+}
+
 .navbar a {
     display: block;
     color: #fff;
