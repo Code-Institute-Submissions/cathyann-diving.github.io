@@ -139,7 +139,7 @@
 }
 
 .col {
-    padding: 0;
+    padding: 0px;
 }
 
 .navbar a {
@@ -153,11 +153,11 @@
 
 #nav li {
     font-size: 12px;
-    padding: 0;
+    padding: 0px;
 }
 
 #nav {
-    margin: 0;
+    margin: 0px;
 }
 
 .menuitem span {
@@ -173,11 +173,11 @@
 }
 
 .list-inline-item:not(:last-child) {
-    margin: 0;
+    margin: 0px;
 }
 
 .menucontainer {
-    font-size: 0;
+    font-size: 0px;
 }
 
 /*--------------------------------------------Hover.css*/
@@ -250,7 +250,7 @@
 
 .center-form {
     padding: 10px;
-    margin: 0 auto;
+    margin: 0px auto;
     max-width: 40%;
 }
 
@@ -276,7 +276,7 @@ button[type="submit"] {
 .social-links li a i {
     width: 32px;
     height: 32px;
-    padding: 10px 0;
+    padding: 10px 0px;
     border-radius: 50%;
     font-size: 13px;
     line-height: 7px;
@@ -318,7 +318,7 @@ button[type="submit"] {
 
     .center-form {
         padding: 10px;
-        margin: 0 auto;
+        margin: 0px auto;
         max-width: 70%;
     }
 
