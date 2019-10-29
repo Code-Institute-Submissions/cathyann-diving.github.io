@@ -58,6 +58,20 @@
     -webkit-transition: all .5s ease-in-out;
 }
 
+.bg-contact {
+    position: fixed;
+    background-image: url("../images/sea.jpg");
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
 /*--------------------------------------------btn */
 
 .btn {
@@ -67,7 +81,6 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #6495ed;
-    color: #00008B;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -78,6 +91,7 @@
 }
 
 .btn span {
+    color: #00008B;
     display: inline-block;
     position: relative;
     transition: 0.5s;
@@ -104,15 +118,15 @@
 .button {
     margin-top: 5px;
     margin-bottom: 10px;
-    color: #008B8B;
-    background-color: #00008B;
+    background-color: #4682B4;
     padding: 5px 10px;
     border: none;
     font-family: "EXO", sans-serif;
-} 
+}
 
 .button a {
     text-decoration: none;
+    color: #00008B;
 }
 
 /*--------------------------------------------navbar */
@@ -180,9 +194,6 @@
     height: 50%;
 }
 
-.container img {
-    vertical-align: middle;
-}
 
 .container .content {
     position: absolute;
@@ -194,13 +205,14 @@
     padding: 30px;
 }
 
-.containers {
+.islands-intro {
     position: relative;
     margin: auto;
     max-width: 80%;
+    color: #fff;
 }
 
-.containers .contents {
+.islands-intro .contents {
     background: rgb(0, 0, 0, 0.5);
     color: #f1f1f1;
     font-family: "EXO", sans-serif;
@@ -212,7 +224,7 @@
 
 .dive-center {
     position: relative;
-    max-width: 60%;
+    max-width: 50%;
     margin: 20px;
     background: rgb(0, 0, 0, 0.5);
     color: #f1f1f1;
@@ -223,19 +235,19 @@
     text-align: left;
 }
 
+
 /*--------------------------------------------Contact Form */
 
 .contact-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
+    color: #fff;
 }
 
 .center-form {
     padding: 10px;
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 40%;
 }
 
 button[type="submit"] {
@@ -248,6 +260,41 @@ button[type="submit"] {
 .form-control {
     border: 1px solid black;
     font-family: inherit;
+    background-color: #B0C4DE;
+}
+
+
+.social-links {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 10px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e84610;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.list-inline {
+    text-align: center;
 }
 
 /*--------------------------------------------islands heading */
@@ -256,10 +303,21 @@ button[type="submit"] {
     padding: 30px;
 }
 
+
+
 /*--------------------------------------------media */
 
 @media(max-width: 576px) {
     .dive-center {
         max-width: 100%;
     }
+
+    .center-form {
+        padding: 10px;
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
 }
+    
+

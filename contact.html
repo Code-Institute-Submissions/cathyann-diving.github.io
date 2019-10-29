@@ -13,7 +13,9 @@
 </head>
 
 <body>
-    <div class="row">
+    
+    <div class="bg-contact"></div>
+        <div class="row">
         <div class="navbar">
             <div class="col">
                 <ul id="nav" class="list-inline menucontainer">
@@ -35,11 +37,60 @@
             </div>
         </div>
     </div>
-    <section class="container-fluid">
-        <div class="row bg-color-contact">
+    <div class="container-contact">
+        
             <div class="col">
-                <h3 class="contact-heading uppercase text-center">Want to know more?</h3>
-                <h5 class="uppercase text-center">Come join us Scuba diving family!</h5>
+                <h4 class="uppercase text-center">Want to know more?</h4>
+                <h6 class="contact-heading uppercase text-center">Come join us Scuba diving family!</h6>
+                <h4 class="uppercase text-center">Need to call?</h4>
+                <h6 class="contact-heading uppercase text-center">Call us at <b>555-555-555</b></h6>
+                <h4 class="uppercase text-center">Social</h4>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                        <i class="fa fa-facebook aria-hidden true"=">
+                            <span class="sr-only">Facebook</span>
+                        </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                        <i class="fa fa-twitter aria-hidden true"=">
+                            <span class="sr-only">Twitter</span>
+                        </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                        <i class="fa fa-linkedin aria-hidden true"=">
+                            <span class="sr-only">Linkedin</span>
+                        </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                        <i class="fa fa-pinterest aria-hidden true"=">
+                            <span class="sr-only">Pinterest</span>
+                        </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                        <i class="fa fa-instagram aria-hidden true"=">
+                            <span class="sr-only">Instagram</span>
+                        </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                        <i class="fa fa-youtube aria-hidden true"=">
+                            <span class="sr-only">Youtube</span>
+                        </i>
+                        </a>
+                    </li>
+                </ul>
+            
+                
                 <div class="col center-form">
                     <form>
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
@@ -47,11 +98,13 @@
                         <select name="services" class="form-control">
                             <option hidden="services selected">Services</option>
                             <option value="trip">Trip</option>
+                            <option value="courses">Courses</option>
                             <option value="transportation">Transportation</option>
                             <option value="equipments">Equipments</option>
                             <option value="equipment maintenance">Equipment Maintenance</option>
                             <option value="spare parts">Spare Parts</option>
                         </select>
+                        <textarea rows="3" name="remark" id="service description" class="form-control" placeholder="Service Description" required></textarea>
                         <div class="form-row text-center">
                             <div class="col">
                                 <button class="btn btn-primary" type="submit">Submit</button>
@@ -60,13 +113,12 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-
-
+        
+    </div>
+    
+    
 
 </body>
 
 </html>
+
